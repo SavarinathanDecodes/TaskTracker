@@ -1,4 +1,5 @@
 ﻿using Application.Features;
+using AutoMapper;
 using Domain.Model.Entity;
 using Persistence.Service.Interface;
 using Persistence.ViewModel.Response;
@@ -13,6 +14,7 @@ namespace Persistence.Service.Implementation
         #region Member variable
 
         private readonly IBaseRepository<User> _baseRepository = null!;
+        private readonly IMapper _mapper = null!;
 
         #endregion
 
@@ -22,9 +24,10 @@ namespace Persistence.Service.Implementation
         /// User service constractor
         /// </summary>
         /// <param name="repository">Request: Base repo instance</param>
-        public UserService(IBaseRepository<User> repository)
+        public UserService(IBaseRepository<User> repository, IMapper mapper)
         {
             _baseRepository = repository;
+            _mapper = mapper;
         }
 
         #endregion
@@ -45,7 +48,7 @@ namespace Persistence.Service.Implementation
                 List<User> dbResponse = _baseRepository.GetAll().ToList();
                 dbResponse.ForEach(user =>
                 {
-                    userList.Add(new UserDetailsVM() { Id = user.Id, Email = user.Email, Name = user.Name });
+                    userList.Add(_mapper.Map<User, UserDetailsVM>(user));
                 });
             }
             catch (Exception)

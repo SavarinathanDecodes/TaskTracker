@@ -21,7 +21,7 @@ namespace Persistence.Context
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder options)
-                => options.UseSqlServer("Data Source=UT-LTP-887;Initial Catalog=TaskManagement;Persist Security Info=True;User ID=sa;Password=Utthunga@2024;Trust Server Certificate=True");
+                => options.UseSqlServer("Data Source=UT-LTP-887;Initial Catalog=TaskManagement;Persist Security Info=True;User ID=sa;Password=Utthunga@2025;Trust Server Certificate=True");
 
 
         #region Public properties

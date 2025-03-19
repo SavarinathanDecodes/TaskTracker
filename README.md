@@ -12,5 +12,6 @@ https://www.figma.com/proto/7whMOAZKxTIwoAfYmom1IS/ToDo's?node-id=0-1&t=HfJvrBHE
 
 Initial ER diagram:
 
-![image](https://github.com/user-attachments/assets/ee0ee140-2bb8-434e-8eb6-903cb4a1d97f)
+![image](https://github.com/user-attachments/assets/c628b97a-f133-4f2c-8e65-7595df2b2e3c)
+
 

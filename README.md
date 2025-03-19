@@ -4,5 +4,13 @@ Migration comments:
 2.  dotnet ef migrations add MigrationName --project ..\Application\ --startup-project ..\Server\
 3.  Update-Migration
 
+
+
 UI:
 https://www.figma.com/proto/7whMOAZKxTIwoAfYmom1IS/ToDo's?node-id=0-1&t=HfJvrBHERgvM8nYC-1
+
+
+Initial ER diagram:
+
+![image](https://github.com/user-attachments/assets/ee0ee140-2bb8-434e-8eb6-903cb4a1d97f)
+

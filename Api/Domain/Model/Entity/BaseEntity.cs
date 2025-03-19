@@ -21,22 +21,32 @@ namespace Domain.Model.Entity
         /// <summary>
         /// Who creating the record
         /// </summary>
+        [Column(TypeName = "VARCHAR(100)")]
         public string CreatedBy { get; set; } = string.Empty;
 
         /// <summary>
         /// When creating the record
         /// </summary>
+        [Column(TypeName = "DATETIME")]
         public DateTime CreatedOn { get; set; }
 
         /// <summary>
         /// Who updating the record
         /// </summary>
+        [Column(TypeName = "VARCHAR(100)")]
         public string UpdatedBy { get; set; } = string.Empty;
 
         /// <summary>
         /// When updating the record
         /// </summary>
+        [Column(TypeName = "DATETIME")]
         public DateTime UpdatedOn { get; set; }
+
+        /// <summary>
+        /// Using for soft delete
+        /// </summary>
+        [Column(TypeName = "INT")]
+        public int IsActive { get; set; }
 
         #endregion
     }

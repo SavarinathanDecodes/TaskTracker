@@ -27,6 +27,11 @@ namespace Persistence.Context
         #region Public properties
 
         public DbSet<User> Users { get; set; } = null!;
+        public DbSet<Category> Category { get; set; } = null!;
+        public DbSet<Priority> Priority { get; set; } = null!;
+        public DbSet<TaskByCategory> TaskByCategory { get; set; } = null!;
+        public DbSet<Tasks> Tasks { get; set; } = null!;
+        public DbSet<UserRole> UserRole { get; set; } = null!;
 
         #endregion
     }

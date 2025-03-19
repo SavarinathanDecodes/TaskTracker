@@ -13,12 +13,21 @@ namespace Domain.Model.Entity
         /// <summary>
         /// Name of the user
         /// </summary>
+        [Column(TypeName = ("VARCHAR(50)"))]
         public string Name { get; set; } = string.Empty;
 
         /// <summary>
         /// Email of the user
         /// </summary>
+        [Column(TypeName = ("VARCHAR(50)"))]
         public string Email { get; set; } = string.Empty;
+
+        #endregion
+
+        #region Relation
+
+        //[JsonIgnore]
+        //public ICollection<User> Users { get; set; } = null!;
 
         #endregion
     }

@@ -103,3 +103,8 @@
         overflow-y: auto;
     }
 }
+
+.nav {
+    align-items: center;
+    margin-top: 50px;
+}
